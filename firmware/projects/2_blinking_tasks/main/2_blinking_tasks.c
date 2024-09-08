@@ -10,7 +10,7 @@
  * |:----------:|:-----------------------------------------------|
  * | 12/09/2023 | Document creation		                         |
  *
- * @author Albano Peñalva (albano.penalva@uner.edu.ar)
+ * @author Moreyra Jesus (jesusbenja25@gmail.com)
  *
  */
 
@@ -29,6 +29,10 @@
 TaskHandle_t led1_task_handle = NULL;
 TaskHandle_t led2_task_handle = NULL;
 TaskHandle_t led3_task_handle = NULL;
+
+bool on = false;
+bool hold = false;
+
 /*==================[internal functions declaration]=========================*/
 static void Led1Task(void *pvParameter){
     while(true){
