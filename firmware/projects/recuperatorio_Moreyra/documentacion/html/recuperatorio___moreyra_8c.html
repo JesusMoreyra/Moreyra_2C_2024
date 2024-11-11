@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Recuperatorio_EP_Moreyra: Referencia del archivo C:/Repositorio/Moreyra_2C_2024/firmware/projects/recuperatorio_Moreyra/main/recuperatorio_Moreyra.c</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Recuperatorio_EP_Moreyra<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">recuperatorio electronica programable</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('recuperatorio___moreyra_8c.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo recuperatorio_Moreyra.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;freertos/FreeRTOS.h&quot;</code><br />
+<code>#include &quot;freertos/task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="analog__io__mcu_8h_source.html">analog_io_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uart__mcu_8h_source.html">uart_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer__mcu_8h_source.html">timer_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gpio__mcu_8h_source.html">gpio_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hc__sr04_8h_source.html">hc_sr04.h</a>&quot;</code><br />
+</div>
+<p><a href="recuperatorio___moreyra_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:afba05896010523e4f33f52b86bd48daa" id="r_afba05896010523e4f33f52b86bd48daa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afba05896010523e4f33f52b86bd48daa">barrera</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a1b3ef28b8ae924f5f3fdfbb0ed7e6f7c">GPIO_6</a></td></tr>
+<tr class="separator:afba05896010523e4f33f52b86bd48daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668dceaad15c7004b27b82bc1f0caa47" id="r_a668dceaad15c7004b27b82bc1f0caa47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a668dceaad15c7004b27b82bc1f0caa47">CONFIG_PERIOD_US_VELOCIDAD</a>&#160;&#160;&#160;100000</td></tr>
+<tr class="separator:a668dceaad15c7004b27b82bc1f0caa47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c50dfd569fc46da88cff5e639e0a4a9" id="r_a7c50dfd569fc46da88cff5e639e0a4a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c50dfd569fc46da88cff5e639e0a4a9">CONFIG_PERIOD_US_PESADO</a>&#160;&#160;&#160;5000</td></tr>
+<tr class="separator:a7c50dfd569fc46da88cff5e639e0a4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a190c1affd4a098e012cc714e001de587" id="r_a190c1affd4a098e012cc714e001de587"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a190c1affd4a098e012cc714e001de587">calculoVelocidadCamion</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:a190c1affd4a098e012cc714e001de587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la velocidad a la que viene el camion.  <br /></td></tr>
+<tr class="separator:a190c1affd4a098e012cc714e001de587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c2941bd2c9a316d9f8b4154029ad61" id="r_ac1c2941bd2c9a316d9f8b4154029ad61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1c2941bd2c9a316d9f8b4154029ad61">pesadoCamion</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:ac1c2941bd2c9a316d9f8b4154029ad61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pesado del camion.  <br /></td></tr>
+<tr class="separator:ac1c2941bd2c9a316d9f8b4154029ad61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec2432e29a411ff2f444a972bcd9748" id="r_a3ec2432e29a411ff2f444a972bcd9748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ec2432e29a411ff2f444a972bcd9748">FuncTimerVelocidad</a> (void *param)</td></tr>
+<tr class="memdesc:a3ec2432e29a411ff2f444a972bcd9748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupcion generada por el timer que informa cuando se debe calcular la velocidad del camion.  <br /></td></tr>
+<tr class="separator:a3ec2432e29a411ff2f444a972bcd9748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93709c8609171833b4dd40f70ca8d036" id="r_a93709c8609171833b4dd40f70ca8d036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93709c8609171833b4dd40f70ca8d036">FuncTimerPesado</a> (void *param)</td></tr>
+<tr class="memdesc:a93709c8609171833b4dd40f70ca8d036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupción generada por el timer que informa cuando se debe calcular el peso del camión.  <br /></td></tr>
+<tr class="separator:a93709c8609171833b4dd40f70ca8d036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb103bd14ff6e2f074f4eb19eed0d00" id="r_a6bb103bd14ff6e2f074f4eb19eed0d00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bb103bd14ff6e2f074f4eb19eed0d00">FuncUart</a> (void *pvParameter)</td></tr>
+<tr class="memdesc:a6bb103bd14ff6e2f074f4eb19eed0d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea que atiende la recepcion de datos en el puerto serial.  <br /></td></tr>
+<tr class="separator:a6bb103bd14ff6e2f074f4eb19eed0d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630544a7f0a2cc40d8a7fefab7e2fe70" id="r_a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main</a> (void)</td></tr>
+<tr class="separator:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2506e70ea739d17bc9e3871aa1b6c2df" id="r_a2506e70ea739d17bc9e3871aa1b6c2df"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2506e70ea739d17bc9e3871aa1b6c2df">medicion</a> = 0</td></tr>
+<tr class="separator:a2506e70ea739d17bc9e3871aa1b6c2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155d950ea5cc1ec54a994945463dc4b4" id="r_a155d950ea5cc1ec54a994945463dc4b4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a155d950ea5cc1ec54a994945463dc4b4">distanciaActual</a> = 0</td></tr>
+<tr class="separator:a155d950ea5cc1ec54a994945463dc4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702c84acd0408a7599a162cd16bc89b5" id="r_a702c84acd0408a7599a162cd16bc89b5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a702c84acd0408a7599a162cd16bc89b5">distanciaAnterior</a> = 0</td></tr>
+<tr class="separator:a702c84acd0408a7599a162cd16bc89b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59078ab0c81548fc9b3a318d98ce3e9" id="r_af59078ab0c81548fc9b3a318d98ce3e9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af59078ab0c81548fc9b3a318d98ce3e9">velocidad</a> = 0</td></tr>
+<tr class="separator:af59078ab0c81548fc9b3a318d98ce3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f718a0d7dcf4634c8defb13b5089e9" id="r_a32f718a0d7dcf4634c8defb13b5089e9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f718a0d7dcf4634c8defb13b5089e9">velocidadMaxima</a> = 0</td></tr>
+<tr class="separator:a32f718a0d7dcf4634c8defb13b5089e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8280766230a5945c85c7f78b4f6492" id="r_a2d8280766230a5945c85c7f78b4f6492"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d8280766230a5945c85c7f78b4f6492">distanciaCamion</a></td></tr>
+<tr class="separator:a2d8280766230a5945c85c7f78b4f6492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e73b84d3008691f68750b55d0d3579" id="r_a39e73b84d3008691f68750b55d0d3579"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39e73b84d3008691f68750b55d0d3579">camionParado</a> = false</td></tr>
+<tr class="separator:a39e73b84d3008691f68750b55d0d3579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f60b5b7d96786c0a4e0d4a5441bf5b8" id="r_a2f60b5b7d96786c0a4e0d4a5441bf5b8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f60b5b7d96786c0a4e0d4a5441bf5b8">galga1</a> = 0</td></tr>
+<tr class="separator:a2f60b5b7d96786c0a4e0d4a5441bf5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a902f9832d3813784f46416400f159b66" id="r_a902f9832d3813784f46416400f159b66"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a902f9832d3813784f46416400f159b66">galga2</a> = 0</td></tr>
+<tr class="separator:a902f9832d3813784f46416400f159b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1ce50bce0966b098514bf5b523838e" id="r_a3f1ce50bce0966b098514bf5b523838e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f1ce50bce0966b098514bf5b523838e">sumaGalga1</a> = 0</td></tr>
+<tr class="separator:a3f1ce50bce0966b098514bf5b523838e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86cc0e6a98265738090f3d1498d7c77" id="r_ad86cc0e6a98265738090f3d1498d7c77"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad86cc0e6a98265738090f3d1498d7c77">sumaGalga2</a> = 0</td></tr>
+<tr class="separator:ad86cc0e6a98265738090f3d1498d7c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af70ba0e664d16a4f4e9e81490fa77a" id="r_a0af70ba0e664d16a4f4e9e81490fa77a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0af70ba0e664d16a4f4e9e81490fa77a">pesoCamion</a> = 0</td></tr>
+<tr class="separator:a0af70ba0e664d16a4f4e9e81490fa77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb45ef4e19d5eb6e01056b0f1156012" id="r_abfb45ef4e19d5eb6e01056b0f1156012"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfb45ef4e19d5eb6e01056b0f1156012">velocidadCamion_handle</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="separator:abfb45ef4e19d5eb6e01056b0f1156012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6811f902b50e1f3bc4904f3d32201bf" id="r_ab6811f902b50e1f3bc4904f3d32201bf"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6811f902b50e1f3bc4904f3d32201bf">pesadoCamion_handle</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="separator:ab6811f902b50e1f3bc4904f3d32201bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de «define»</h2>
+<a id="afba05896010523e4f33f52b86bd48daa" name="afba05896010523e4f33f52b86bd48daa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba05896010523e4f33f52b86bd48daa">&#9670;&#160;</a></span>barrera</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define barrera&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a1b3ef28b8ae924f5f3fdfbb0ed7e6f7c">GPIO_6</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00045">45</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00192">FuncUart()</a>.</p>
+
+</div>
+</div>
+<a id="a7c50dfd569fc46da88cff5e639e0a4a9" name="a7c50dfd569fc46da88cff5e639e0a4a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c50dfd569fc46da88cff5e639e0a4a9">&#9670;&#160;</a></span>CONFIG_PERIOD_US_PESADO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONFIG_PERIOD_US_PESADO&#160;&#160;&#160;5000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00047">47</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a668dceaad15c7004b27b82bc1f0caa47" name="a668dceaad15c7004b27b82bc1f0caa47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668dceaad15c7004b27b82bc1f0caa47">&#9670;&#160;</a></span>CONFIG_PERIOD_US_VELOCIDAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONFIG_PERIOD_US_VELOCIDAD&#160;&#160;&#160;100000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00046">46</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones</h2>
+<a id="a630544a7f0a2cc40d8a7fefab7e2fe70" name="a630544a7f0a2cc40d8a7fefab7e2fe70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630544a7f0a2cc40d8a7fefab7e2fe70">&#9670;&#160;</a></span>app_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void app_main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">207</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="analog__io__mcu_8h_source.html#l00038">ADC_SINGLE</a>, <a class="el" href="analog__io__mcu_8c_source.html#l00045">AnalogInputInit()</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00072">calculoVelocidadCamion()</a>, <a class="el" href="analog__io__mcu_8h_source.html#l00031">CH0</a>, <a class="el" href="analog__io__mcu_8h_source.html#l00032">CH1</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00047">CONFIG_PERIOD_US_PESADO</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00046">CONFIG_PERIOD_US_VELOCIDAD</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00178">FuncTimerPesado()</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00164">FuncTimerVelocidad()</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00192">FuncUart()</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00056">galga1</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00057">galga2</a>, <a class="el" href="gpio__mcu_8h_source.html#l00054">GPIO_2</a>, <a class="el" href="gpio__mcu_8h_source.html#l00055">GPIO_3</a>, <a class="el" href="hc__sr04_8c_source.html#l00034">HcSr04Init()</a>, <a class="el" href="led_8c_source.html#l00031">LedsInit()</a>, <a class="el" href="ili9341_8c_source.html#l00019">NULL</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00121">pesadoCamion()</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00062">pesadoCamion_handle</a>, <a class="el" href="timer__mcu_8h_source.html#l00040">timer_config_t::timer</a>, <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8h_source.html#l00033">TIMER_B</a>, <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>, <a class="el" href="timer__mcu_8c_source.html#l00116">TimerStart()</a>, <a class="el" href="uart__mcu_8h_source.html#l00032">UART_PC</a>, <a class="el" href="uart__mcu_8c_source.html#l00107">UartInit()</a> y <a class="el" href="recuperatorio___moreyra_8c_source.html#l00061">velocidadCamion_handle</a>.</p>
+
+</div>
+</div>
+<a id="a190c1affd4a098e012cc714e001de587" name="a190c1affd4a098e012cc714e001de587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190c1affd4a098e012cc714e001de587">&#9670;&#160;</a></span>calculoVelocidadCamion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calculoVelocidadCamion </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcula la velocidad a la que viene el camion. </p>
+<p>a traves de mediciones obtenidas por el sensor HC-SR04 se encarga de calcular la velocidad del camion y de encender los leds de acuerdo a la velocidad</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvParameter</td><td>No se utiliza </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00072">72</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="recuperatorio___moreyra_8c_source.html#l00055">camionParado</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00050">distanciaActual</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00051">distanciaAnterior</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00054">distanciaCamion</a>, <a class="el" href="hc__sr04_8c_source.html#l00045">HcSr04ReadDistanceInCentimeters()</a>, <a class="el" href="led_8h_source.html#l00034">LED_1</a>, <a class="el" href="led_8h_source.html#l00033">LED_2</a>, <a class="el" href="led_8h_source.html#l00032">LED_3</a>, <a class="el" href="led_8c_source.html#l00065">LedOff()</a>, <a class="el" href="led_8c_source.html#l00046">LedOn()</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00049">medicion</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00052">velocidad</a> y <a class="el" href="recuperatorio___moreyra_8c_source.html#l00053">velocidadMaxima</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a93709c8609171833b4dd40f70ca8d036" name="a93709c8609171833b4dd40f70ca8d036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93709c8609171833b4dd40f70ca8d036">&#9670;&#160;</a></span>FuncTimerPesado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FuncTimerPesado </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupción generada por el timer que informa cuando se debe calcular el peso del camión. </p>
+<p>Esta función se invoca en la interrupción del timer de pesado y envía una notificación a la tarea asociada para procesar el cálculo.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>Puntero a un parámetro no utilizado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00178">178</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="recuperatorio___moreyra_8c_source.html#l00062">pesadoCamion_handle</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a3ec2432e29a411ff2f444a972bcd9748" name="a3ec2432e29a411ff2f444a972bcd9748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec2432e29a411ff2f444a972bcd9748">&#9670;&#160;</a></span>FuncTimerVelocidad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FuncTimerVelocidad </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupcion generada por el timer que informa cuando se debe calcular la velocidad del camion. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>No se utiliza </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00164">164</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="recuperatorio___moreyra_8c_source.html#l00061">velocidadCamion_handle</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a6bb103bd14ff6e2f074f4eb19eed0d00" name="a6bb103bd14ff6e2f074f4eb19eed0d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb103bd14ff6e2f074f4eb19eed0d00">&#9670;&#160;</a></span>FuncUart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FuncUart </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tarea que atiende la recepcion de datos en el puerto serial. </p>
+<p>Esta tarea se encarga de leer los caracteres que se envian por el puerto serial y de encender o apagar la barrera segun sea el caso.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvParameter</td><td>No se utiliza </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00192">192</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="recuperatorio___moreyra_8c_source.html#l00045">barrera</a>, <a class="el" href="gpio__mcu_8c_source.html#l00086">GPIOOff()</a>, <a class="el" href="gpio__mcu_8c_source.html#l00081">GPIOOn()</a>, <a class="el" href="uart__mcu_8h_source.html#l00032">UART_PC</a> y <a class="el" href="uart__mcu_8c_source.html#l00142">UartReadByte()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="ac1c2941bd2c9a316d9f8b4154029ad61" name="ac1c2941bd2c9a316d9f8b4154029ad61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c2941bd2c9a316d9f8b4154029ad61">&#9670;&#160;</a></span>pesadoCamion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pesadoCamion </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pesado del camion. </p>
+<p>La tarea pesadoCamion se encarga de pesar el camion cuando este se detiene.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvParameter</td><td>No se utiliza </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00121">121</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="analog__io__mcu_8c_source.html#l00130">AnalogInputReadSingle()</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00055">camionParado</a>, <a class="el" href="analog__io__mcu_8h_source.html#l00031">CH0</a>, <a class="el" href="analog__io__mcu_8h_source.html#l00032">CH1</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00056">galga1</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00057">galga2</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00060">pesoCamion</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00058">sumaGalga1</a>, <a class="el" href="recuperatorio___moreyra_8c_source.html#l00059">sumaGalga2</a>, <a class="el" href="uart__mcu_8h_source.html#l00032">UART_PC</a>, <a class="el" href="uart__mcu_8c_source.html#l00222">UartItoa()</a>, <a class="el" href="uart__mcu_8c_source.html#l00193">UartSendString()</a> y <a class="el" href="recuperatorio___moreyra_8c_source.html#l00053">velocidadMaxima</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="a39e73b84d3008691f68750b55d0d3579" name="a39e73b84d3008691f68750b55d0d3579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e73b84d3008691f68750b55d0d3579">&#9670;&#160;</a></span>camionParado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool camionParado = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00055">55</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00072">calculoVelocidadCamion()</a> y <a class="el" href="recuperatorio___moreyra_8c_source.html#l00121">pesadoCamion()</a>.</p>
+
+</div>
+</div>
+<a id="a155d950ea5cc1ec54a994945463dc4b4" name="a155d950ea5cc1ec54a994945463dc4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a155d950ea5cc1ec54a994945463dc4b4">&#9670;&#160;</a></span>distanciaActual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t distanciaActual = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00050">50</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00072">calculoVelocidadCamion()</a>.</p>
+
+</div>
+</div>
+<a id="a702c84acd0408a7599a162cd16bc89b5" name="a702c84acd0408a7599a162cd16bc89b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702c84acd0408a7599a162cd16bc89b5">&#9670;&#160;</a></span>distanciaAnterior</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t distanciaAnterior = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00051">51</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00072">calculoVelocidadCamion()</a>.</p>
+
+</div>
+</div>
+<a id="a2d8280766230a5945c85c7f78b4f6492" name="a2d8280766230a5945c85c7f78b4f6492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8280766230a5945c85c7f78b4f6492">&#9670;&#160;</a></span>distanciaCamion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t distanciaCamion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00054">54</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00072">calculoVelocidadCamion()</a>.</p>
+
+</div>
+</div>
+<a id="a2f60b5b7d96786c0a4e0d4a5441bf5b8" name="a2f60b5b7d96786c0a4e0d4a5441bf5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f60b5b7d96786c0a4e0d4a5441bf5b8">&#9670;&#160;</a></span>galga1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t galga1 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00056">56</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a> y <a class="el" href="recuperatorio___moreyra_8c_source.html#l00121">pesadoCamion()</a>.</p>
+
+</div>
+</div>
+<a id="a902f9832d3813784f46416400f159b66" name="a902f9832d3813784f46416400f159b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a902f9832d3813784f46416400f159b66">&#9670;&#160;</a></span>galga2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t galga2 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00057">57</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a> y <a class="el" href="recuperatorio___moreyra_8c_source.html#l00121">pesadoCamion()</a>.</p>
+
+</div>
+</div>
+<a id="a2506e70ea739d17bc9e3871aa1b6c2df" name="a2506e70ea739d17bc9e3871aa1b6c2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2506e70ea739d17bc9e3871aa1b6c2df">&#9670;&#160;</a></span>medicion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t medicion = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00049">49</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00072">calculoVelocidadCamion()</a>.</p>
+
+</div>
+</div>
+<a id="ab6811f902b50e1f3bc4904f3d32201bf" name="ab6811f902b50e1f3bc4904f3d32201bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6811f902b50e1f3bc4904f3d32201bf">&#9670;&#160;</a></span>pesadoCamion_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t pesadoCamion_handle = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00062">62</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a> y <a class="el" href="recuperatorio___moreyra_8c_source.html#l00178">FuncTimerPesado()</a>.</p>
+
+</div>
+</div>
+<a id="a0af70ba0e664d16a4f4e9e81490fa77a" name="a0af70ba0e664d16a4f4e9e81490fa77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0af70ba0e664d16a4f4e9e81490fa77a">&#9670;&#160;</a></span>pesoCamion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pesoCamion = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00060">60</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00121">pesadoCamion()</a>.</p>
+
+</div>
+</div>
+<a id="a3f1ce50bce0966b098514bf5b523838e" name="a3f1ce50bce0966b098514bf5b523838e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1ce50bce0966b098514bf5b523838e">&#9670;&#160;</a></span>sumaGalga1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t sumaGalga1 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00058">58</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00121">pesadoCamion()</a>.</p>
+
+</div>
+</div>
+<a id="ad86cc0e6a98265738090f3d1498d7c77" name="ad86cc0e6a98265738090f3d1498d7c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86cc0e6a98265738090f3d1498d7c77">&#9670;&#160;</a></span>sumaGalga2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t sumaGalga2 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00059">59</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00121">pesadoCamion()</a>.</p>
+
+</div>
+</div>
+<a id="af59078ab0c81548fc9b3a318d98ce3e9" name="af59078ab0c81548fc9b3a318d98ce3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59078ab0c81548fc9b3a318d98ce3e9">&#9670;&#160;</a></span>velocidad</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t velocidad = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00052">52</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00072">calculoVelocidadCamion()</a>.</p>
+
+</div>
+</div>
+<a id="abfb45ef4e19d5eb6e01056b0f1156012" name="abfb45ef4e19d5eb6e01056b0f1156012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb45ef4e19d5eb6e01056b0f1156012">&#9670;&#160;</a></span>velocidadCamion_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t velocidadCamion_handle = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00061">61</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00207">app_main()</a> y <a class="el" href="recuperatorio___moreyra_8c_source.html#l00164">FuncTimerVelocidad()</a>.</p>
+
+</div>
+</div>
+<a id="a32f718a0d7dcf4634c8defb13b5089e9" name="a32f718a0d7dcf4634c8defb13b5089e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f718a0d7dcf4634c8defb13b5089e9">&#9670;&#160;</a></span>velocidadMaxima</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t velocidadMaxima = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="recuperatorio___moreyra_8c_source.html#l00053">53</a> del archivo <a class="el" href="recuperatorio___moreyra_8c_source.html">recuperatorio_Moreyra.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="recuperatorio___moreyra_8c_source.html#l00072">calculoVelocidadCamion()</a> y <a class="el" href="recuperatorio___moreyra_8c_source.html#l00121">pesadoCamion()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a class="el" href="dir_429d80758da54da73083af4edd40d0b3.html">projects</a></li><li class="navelem"><a class="el" href="dir_0f2b6c1db70d7d7147c613a576d1fb1a.html">recuperatorio_Moreyra</a></li><li class="navelem"><a class="el" href="dir_e051004968a70ac51b92f044d2bb1643.html">main</a></li><li class="navelem"><a class="el" href="recuperatorio___moreyra_8c.html">recuperatorio_Moreyra.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

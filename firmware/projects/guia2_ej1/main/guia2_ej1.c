@@ -121,6 +121,7 @@ static void MeasureTask(void *pvParameter)
  * @param pvParameter Un puntero a void que no se utiliza dentro de la función.
  * @return Ninguno
  */
+
 static void LedsTask(void *pvParameter)
 {
 	while (true)
